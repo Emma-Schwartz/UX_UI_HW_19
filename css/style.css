@@ -1,0 +1,383 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Set font family */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar CSS */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav {
+    width: 93%;
+    padding: 1%;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto; /* Center the ul in the nav if needed */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list styles */
+    text-align: right; /* Center the menu items if necessary */
+}
+
+nav ul li {
+    display: inline-block; /* Display li elements in a line */
+    margin-right: 30px; /* Add horizontal spacing between items */
+    margin-bottom: 10px; /* Adjust the amount of spacing as needed */
+}
+
+/* Make sure the last item doesn't have a margin to the right */
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #000; /* Or any color you want */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* To maintain the style on hover and when a link is visited or active: */
+nav a:hover,
+nav a:visited,
+nav a:active,
+nav a:focus {
+    color: #000; /* Or any color you want */
+    text-decoration: none;
+}
+
+
+.text-container {
+    margin: 0 auto; /* Centers the container within the about-me section */
+    padding: 20px; /* Add padding inside the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    max-width: 900px; /* Or any max-width you prefer */
+    color: white;
+}
+
+.navigation, .about-me {
+    background-image: url('../images/aboutmebackground.png');
+}
+.about-me {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+.industry-list {
+    display: grid;
+    grid-template-columns: repeat(2, calc(67% - 2px)); /* Creates two columns */
+    gap: 20px; /* Adjust the space between the grid items */
+    max-width: 600px; /* Adjust the max-width as per your design requirements */
+    margin: 0 auto; /* This will center the .industry-list within .industries */
+}
+
+.industry-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.industry-item span {
+    margin-left: 8px;
+    font-size: 20px; /* Adjust the font size for the text */
+}
+
+.industries h2 {
+    padding-bottom: 5px;
+    padding: 20px;
+}
+
+.industries ul {
+    list-style: none;
+    padding: 0;
+}
+
+.industries ul li {
+    margin-bottom: 10px;
+    font-size: 18px; /* Adjust the font size for the text */
+    line-height: 24px; /* Adjust line height to align text with icon */
+}
+
+.icon {
+    width: 26px; /* Adjust the width as needed */
+    height: 26px; /* Adjust the height as needed */
+    vertical-align: middle; /* Align the icon with the middle of the text */
+    margin-right: 8px; /* Space between the icon and the text */
+}
+
+.navigation {
+    background-color: transparent;
+}
+
+.inline-block {
+    display: inline-block;
+    /* Add your styles for inline blocks */
+}
+
+.resume-wrapper {
+    border: 4px solid #B0DAAC; /* Example border: solid, 1 pixel, black */
+    margin: 20px;
+    margin-top: 5px; /* This will create a margin around the entire resume section */
+    padding: 20px; /* This will add space between the border and the content inside */
+  }
+
+  .resume h2 {
+    padding-bottom: 5px;
+    padding: 5px;
+  }
+
+  .resume {
+    /* Reduce top and bottom padding, adjust values as needed */
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .industries-wrapper {
+    border: 4px solid #B0DAAC; /* Example border: solid, 1 pixel, black */
+    margin: 20px; /* This will create a margin around the entire resume section */
+    padding: 20px; /* This will add space between the border and the content inside */
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* This will allow items to be on the same line if there's enough space */
+  }
+  
+  .button-container {
+    text-align: right;
+    padding: 20px;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .download-button {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    color: #B0DAAC; /* Green text */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid #B0DAAC; /* Optional: if you want a green border */
+    cursor: pointer;
+    display: inline-block; /* or 'inline' depending on your needs */
+  }
+
+  .logo {
+    max-width: 100%; /* Makes the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.case-study::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last number to control darkness */
+    z-index: 1; /* Ensure it's above the background image */
+}
+
+.case-studies {
+    padding: 50px 0; /* Add spacing above and below the section */
+}
+
+.case-study {
+    position: relative; /* Set position to relative */
+    width: 800px; 
+    height: 390px; 
+    padding: 20px; /* Add padding to the sections */
+    border: 5px solid #B0DAAC; /* Add border */
+    margin: 20px auto 40px; /* Add margin to center the sections */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    overflow: hidden;
+    color: white;
+}
+
+.case-studies .plant-care {
+    background-image: url('../images/plantappphoto.png'); /* Replace with the URL or path to your image */
+}
+
+.case-studies .nonprofit-website {
+    background-image: url('../images/beephoto.png'); /* Replace with the URL or path to your image */
+}
+
+.case-studies .government-website {
+    background-image: url('../images/monument.png'); /* Replace with the URL or path to your image */
+}
+
+.case-study img {
+    display: block; /* Ensure images display as block elements */
+    margin: 0 auto 15px; /* Center images and add bottom margin */
+}
+
+.case-study .content {
+    text-align: center;
+    position: relative; /* Set position to absolute */
+    top: 50%; /* Align content vertically to the center */
+    left: 50%; /* Align content horizontally to the center */
+    padding: 20px;
+    transform: translate(-50%, -50%); /* Adjust position */
+    z-index: 2;
+}
+
+
+
+.case-study h2 {
+    text-align: center; /* Center-align main header */
+}
+
+.case-study h3 {
+    text-align: center; /* Center-align sub header */
+    margin-bottom: 60px; /* Add margin below the subheader */
+}
+
+
+.case-studies .content button {
+    padding: 10px 30px; /* Add padding to the button */
+    border: 2px solid black; /* Add black border */
+    cursor: pointer;
+}
+
+.case-study .btn {
+    margin-top: 40px;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border: 2px solid black;
+    color: black; /* Black text */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.case-study button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* White text */
+    border: 2px solid white !important; /* White border */
+    /* Other styles */
+}
+
+.education h1 {
+    font-size: 24px; /* or any other size */
+    color: #000; /* or any other color */
+}
+
+.education-entry {
+    margin-bottom: 20px;
+}
+
+.education-entry p {
+    margin: 5px 0;
+    font-size: 18px; /* or any other size */
+}
+
+.education-entry span {
+    margin: 5px 0;
+    font-size: 18px; /* or any other size */
+    color: #000; /* or any other color */
+}
+
+.download-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: block; /* Align to the right */
+    width: fit-content;
+    margin: 20px auto 0 auto;
+}
+
+.green-text-container p {
+    color: #779674; /* Your desired shade of green */
+  }
+
+  footer {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.footer-content {
+    display: inline-block; /* To center the content with text-align */
+}
+
+.footer-row {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Space between text and icons */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set your desired color */
+    font-size: 1rem; /* Set your desired font size */
+}
+
+footer img {
+    width: 24px; /* Set your desired icon size */
+    height: auto;
+}
+
+/* General footer link styles */
+.footer-link {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set your desired color */
+    font-size: 1rem; /* Set your desired font size for normal links */
+}
+
+/* Specific styles for email and LinkedIn links */
+.footer-row2 {
+    font-size: 1.5rem; /* Increase font size for these elements */
+    font-weight: bold; /* Optional: makes the text bold */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles that will apply when the browser window is 768px wide or less */
+    body {
+      background-attachment: scroll; /* Because fixed backgrounds do not work well on all mobile devices */
+    }
+  
+    nav {
+      width: 100%; /* Full width for smaller screens */
+      padding: 0.5%; /* Adjust padding for smaller screens */
+    }
+  
+    nav ul {
+      text-align: center; /* Center-align the menu items for mobile */
+    }
+  
+    nav ul li {
+      display: block; /* Stack the menu items vertically */
+      margin-right: 0; /* Remove the right margin */
+    }
+  
+    .button-container {
+      text-align: center; /* Center-align the download button */
+      padding-top: 10px; /* Reduce the top padding */
+    }
+  
+    .download-button {
+      /* Adjust button styling if necessary */
+      display: inline-block; /* Center the button */
+      width: auto; /* Adjust the width as needed */
+      margin: 10px 0; /* Add some margin to the top and bottom */
+    }
+  
+    /* Add any other styles you want to adjust for mobile here */
+  }
+  
